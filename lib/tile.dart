@@ -91,6 +91,7 @@ class BeerTile extends AnimatedWidget {
                         image: AssetImage(beer.asset),
                         fit: BoxFit.scaleDown,
 
+                        // test comment
                       ),
                     ),
                   ),
