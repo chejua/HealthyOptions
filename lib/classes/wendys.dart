@@ -36,7 +36,7 @@ class Wendys extends Restaurant {
           size: '12x330ml',
           note: 'Yowza! This character’s outspoken. Bursting with opinions. Arrives with a floral bouquet. Hoots. Honks. Hops.Charismatic. Honey. Bombastic. Citrus. Distinguished. Tang. Then closes the deal guaranteeing your thirst thoroughly quenched.',
           foodMatch: 'Thai Beef Salad, Chicken Vindloo, Sweet & Sour Pork.',
-          image: 'statesman',
+          image: 'wendys_salad',
           color: Color.fromRGBO(237, 142, 47, 1.0)),
       Beer(
           id: 3,

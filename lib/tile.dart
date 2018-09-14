@@ -33,6 +33,9 @@ class BeerTile extends AnimatedWidget {
   _makeBeer(BuildContext context){
     final Animation<double> animation = listenable;
     final double _width = MediaQuery.of(context).size.width;
+    //final double _width = MediaQuery.of(context).size.width;
+
+    print('The width is  $_width');
 
     Tween<double> tween = Tween(begin: _width - 90, end: 0.0); // Tween(begin: _width - 90, end: 0.0);
 
@@ -87,10 +90,10 @@ class BeerTile extends AnimatedWidget {
                   width: 70.0, //70 GGA 75
                   child: Container(
                     decoration: BoxDecoration(
+                      //color: Colors.blue, // GGA
                       image: DecorationImage(
                         image: AssetImage(beer.asset),
-                        fit: BoxFit.scaleDown,
-
+                        fit: BoxFit.fill,
                         // test comment
                       ),
                     ),
@@ -125,11 +128,11 @@ class BeerTile extends AnimatedWidget {
           Container(
             margin: EdgeInsets.symmetric(vertical: 15.0),
             width: double.infinity,
-            child: FlatButton(
-              color: Colors.grey.shade300,
-              onPressed: (){},
-              child: Text('Order'),
-            ),
+//            child: FlatButton(
+//              color: Colors.grey.shade300,
+//              onPressed: (){},
+//              child: Text('Order'),
+//            ),
           ),
         ],
       ),
